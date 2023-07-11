@@ -19,12 +19,11 @@ Example:
     }
 
     // test the spec by running with ./app test
-    // you can compile yourself, or [use a hashbang](https://github.com/rogerkeays/hashbang)
     fun main(args: Array<String>) {
         if (args[0] == "test") test()
     }
 
-*funspec* is designed for single-file apps launched with a hashbang. Because `kotlin.test` is not included in the standard library, *funspec* offers a simple way to create an app with no dependencies. To use it, just copy the functions from [funspec.kt] to the bottom of your script.
+*funspec* is designed for single-file apps launched with a [hashbang](https://github.com/rogerkeays/hashbang). Because `kotlin.test` is not included in the standard library, *funspec* offers a simple way to create an app with no dependencies. To use it, just copy the functions from [funspec.kt] to the bottom of your script.
 
 *funspec* is fail-fast. That is, it stops with an error when one of the specs fail.
 
